@@ -1,0 +1,33 @@
+The Lord of the stRings: Episode 2
+
+Gli scopi di questo laboratorio sono analoghi a quelli del precedente:
+- migliorare la comprensione di stringhe, array di caratteri e puntatori in C
+- utilizzare la shell bash, sia in modalita' interattiva che in modalita' script
+- utilizzare applicazioni quali make, diff, gcc, rm e (soprattutto) man
+- migliorare la capacita' di comprensione del sorgente di un programma 
+  (che si tratti di un programma C, o di un Makefile, o di uno script)
+  allo scopo di modificarlo (in questo caso completandolo)
+- esercitare le proprie abilita' intuitive.
+
+Questa cartella contiene due programmi in C: hello.c e hello1.c.
+
+Il primo e' un programma davvero banale (guardare per credere).
+
+Il secondo e' incompleto, e la sfida consiste nel completarlo in modo che:
+
+a) generi lo stesso identico output di "hello.c", senza modificare
+   nulla se non gli spazi vuoti tra i due commenti
+   /*** TO BE DONE START ***/          /*** TO BE DONE END ***/
+b) il numero di istruzioni e di caratteri tra la fine del primo e
+   l'inizio del secondo commento sia minimo
+c) la funzione "my_printf" possa essere richiamata anche su altre
+   stringhe oltre a quelle contenute attualmente nella funzione "main".
+
+La verifica dell'uguaglianza dell'output puo' essere fatta in modo automatico lanciando il comando:
+
+> make check_hello1
+
+Provate anche a capire come funziona il test automatico, andando a leggere sia il Makefile sia lo script check.sh
+
+
+Buon divertimento :)
