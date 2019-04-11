@@ -103,6 +103,7 @@ int main(int argc, char ** argv){
 	char f[]="fp";
 	char g[]="m";
 	char h[]="mp";
+	if(argv[1]==NULL) {printf("\nBravo!\n"); return 0;}
 	if(strcmp(argv[1],e)==0) {printf("\nBrava!\n"); return 0;}
 	if(strcmp(argv[1],f)==0) {printf("\nBrave!\n"); return 0;}
 	if(strcmp(argv[1],g)==0) {printf("\nBravo!\n"); return 0;}
