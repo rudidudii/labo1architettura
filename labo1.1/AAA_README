@@ -1,0 +1,36 @@
+The Lord of the stRings: Episode 1
+
+Gli scopi di questo primo esercizio sono:
+- imparare a usare le funzioni di <stdio.h> printf() ecc. in C
+- migliorare la comprensione di stringhe, array di caratteri e puntatori in C
+- utilizzare la shell bash, sia in modalita' interattiva che in modalita' script
+- utilizzare applicazioni quali make, diff, gcc, rm e (soprattutto) man
+- migliorare la capacita' di comprensione del sorgente di un programma 
+  (che si tratti di un programma C, o di un Makefile, o di uno script)
+  allo scopo di modificarlo (in questo caso completandolo)
+- esercitare le proprie abilita' intuitive.
+
+Questa cartella contiene due programmi in C: hello.c e string_master.c
+Il primo e' banale, e può essere compilato e mandato in esecuzione da shell con i comandi:
+
+make hello
+./hello
+
+Il secondo invece e' incompleto, e la sfida consiste nel completarlo in modo che l'eseguibile ottenuto dalla compilazione generi un output ***uguale*** a quello dell'eseguibile di riferimento "gc_string_master"
+(non "quasi uguale" bensi' "uguale").
+
+La verifica di uguaglianza dell'output puo' essere fatta in modo semi-automatico mediante il comando:
+
+> make test_master
+
+e verificando il contenuto dei quattro file nominati diff_*.txt che vengono prodotti dallo script check_master.sh.  Attenzione: tale verifica non copre tutti i possibili casi che si possono presentare in input.
+
+Suggerimenti:
+1. utilizzando subito la verifica di uguaglianza, si riesce a vedere
+   immediatamente che cosa manca nel programma da completare.
+2. lanciando subito l'eseguibile "gc_string_master" con i parametri suggeriti
+   all'interno dello script check_master.shm e prestando attenzione alla parte
+   finale dell'output ottenuto, e' possibile ricavare la giusta intuizione.
+
+
+Per il momento e' tutto ragazzi, buon divertimento! :-)
