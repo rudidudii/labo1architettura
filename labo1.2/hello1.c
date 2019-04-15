@@ -8,7 +8,7 @@ void my_printf(char*p){
         strcpy(s,p);
 
 /*** TO BE DONE START ***/
-	while(*q==' ' || *q=='\t' || *q=='\n') *q++;
+	while(*q==' ' || *q=='\t') *q++;
 	*q=toupper(*q);
 	q=s;
 	for(int i=0;i<strlen(s);++i){
